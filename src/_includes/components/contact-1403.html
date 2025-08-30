@@ -1,0 +1,74 @@
+
+<section id="contact-1403">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Get in Touch</h2>
+            <p class="cs-text">
+                We are a team of passionate and creative individuals dedicated to crafting captivating designs that leave a lasting impression.
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="/assets/svgs/phone.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Phone</span>
+                       <a href="tel:{{client.locations[locationKey].phoneForTel}}" class="cs-link">{{client.locations[locationKey].phoneFormatted}}</a>
+                    </div>                    
+                </li>
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="/assets/svgs/clock.svg" alt="hours icon" class="cs-icon" width="40" height="40" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Hours</span>
+                        <a href="{{client.locations[locationKey].address.mapLink}}" target="_blank" rel="noopener" class="cs-link">{{ client.locations[locationKey].openingHours }}</a>
+                    </div>                    
+                </li>
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="/assets/svgs/pin.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Address</span>
+                        <a href="{{client.locations[locationKey].address.mapLink}}" class="cs-link">{{client.locations[locationKey].address.lineOne}}, {{client.locations[locationKey].address.city}}, {{client.locations[locationKey].address.zip}}</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--Form-->
+       <form class="cs-form" id="cs-form-{{ locationKey }}" name="Contact Form - {{ client.locations[locationKey].name }}" method="post" data-netlify="true">
+        <input type='hidden' name='form-name' value='Contact Form - {{ client.locations[locationKey].name }}' />
+        <input type='hidden' name='location' value='{{ client.locations[locationKey].address.city }}' />
+        <input type='hidden' name='location-phone' value='{{ client.locations[locationKey].phoneFormatted }}' />
+        
+        <h3 class="cs-h3">Make Appointment</h3>
+        <label class="cs-label">
+            Name
+            <input class="cs-input" required type="text" id="name-{{ locationKey }}" name="name" placeholder="Name">
+        </label>
+        <label class="cs-label cs-email">
+            Email
+            <input class="cs-input" required type="email" id="email-{{ locationKey }}" name="email" placeholder="Email">
+        </label>
+        <label class="cs-label cs-phone">
+            Phone
+            <input class="cs-input" required type="tel" id="phone-{{ locationKey }}" name="phone" placeholder="Phone">
+        </label>
+        <label class="cs-label">
+            Message
+            <textarea class="cs-input cs-textarea" required name="message" id="message-{{ locationKey }}" placeholder="Tell us about your preferred appointment time..."></textarea>
+        </label>
+        <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+    </form>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--          Google Map Iframe Embed             -->
+<!-- ============================================ -->
+
+<section id="map-1403">
+    <iframe src="{{ client.locations[locationKey].mapEmbed }}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>

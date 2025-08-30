@@ -79,25 +79,31 @@ eleventyNavigation:
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-{% include 'components/hero-856.html' %}
+<section id="hero-1160">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">The Best Care Servicing In Town</span>
+            <h1 class="cs-title">We Are Qualified And Professional</h1>
+            <p class="cs-text">
+                We are the premier Stitch Design Pack for mechanics and auto body websites of all varieties.
+            </p>
+            <a href="" class="cs-button-solid">Explore Services</a>
+        </div>
+    </div>
+
+    <!--SVG V Graphic-->
+    <!--<img class="cs-graphic" decoding="async" src="/assets/svgs/centered-v.svg" alt="graphic" width="1920" height="163" aria-hidden="true">-->
+
+    <!-- Background Image, also BG Image is set in CSS at 1600px wide for parallax effect -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/hero-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/hero.webp">
+        <img decoding="async" src="/assets/images/hero.jpg" alt="woman getting a massage" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
 
 <!-- ============================================ -->
-<!--               Why Choose Us                  -->
-<!-- ============================================ -->
-
-{% include 'components/why-choose-687.html' %}
-
-{% include 'components/why-choose-1313.html' %}
-
-{% include 'components/why-choose-1631.html' %}
-
-{% include 'components/why-choose-1635.html' %}
-
-{% include 'components/why-choose-1658.html' %}
-
-
-<!-- ============================================ -->
-<!--            Featured Service 1                -->
+<!--                  About Us                    -->
 <!-- ============================================ -->
 
 <section id="sbs-867">
@@ -132,133 +138,306 @@ eleventyNavigation:
 </section>
 
 <!-- ============================================ -->
-<!--             Popular Services                 -->
+<!--                Why Choose Us                 -->
 <!-- ============================================ -->
-
-{% include 'components/services-343.html' %}
-
-{% include 'components/services-877.html' %}
-
-{% include 'components/services-879.html' %}
-
-{% include 'components/services-1251.html' %}
-
-{% include 'components/services-2129.html' %}
-
+                                
+{% include 'components/why-choose-1772.html' %} 
 
 
 <!-- ============================================ -->
-<!--             Featured Service 2               -->
+<!--            Side By Side Reverse              -->
 <!-- ============================================ -->
 
-<section id="sbs-r-870">
+<section id="sbs-r-869">
     <div class="cs-container">
-        <picture class="cs-picture">
-            <!--Mobile Image -->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 576, height: 800}) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 576, height: 800}) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 576, height: 800}) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image -->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1100, height: 1433}) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1100, height: 1433}) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1100, height: 1433}) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image -->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1260, height: 1550}) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1260, height: 1550}) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" alt="massage" width="630" height="775" loading="lazy" decoding="async" aria-hidden="true">
-        </picture>
+        <div class="cs-image-group">
+            <!--Right Image-->
+             <picture class="cs-right-img">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | jpeg %}" alt="image description" width="439" height="560" loading="lazy" decoding="async">
+            </picture>
+            <!--Left Image-->
+            <picture class="cs-left-img">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | jpeg %}" alt="image description" width="439" height="560" loading="lazy" decoding="async">
+            </picture>
+        </div>
         <div class="cs-content">
-            <span class="cs-topper">Featured Service</span>
-            <h2 class="cs-title">Occupational and Speech Therapy</h2>
+            <span class="cs-topper">Our Treatment List</span>
+            <h2 class="cs-title">List of Condition We Treat in Our Center</h2>
             <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta officiis praesentium necessitatibus tempora unde quasi porro nemo aliquam voluptatem quaerat hic, doloremque impedit perferendis labore, ea libero voluptas laudantium? 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab dolores minima similique incidunt quisquam neque rem quae fugiat, officia, id rerum deserunt? Recusandae sit praesentium vero itaque quas ullam illo, nobis quos repellat optio veritatis perferendis doloremque consequuntur assumenda.
             </p>
-            <p class="cs-text">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <a href="{{client.onlineBooking}}" class="cs-button-solid">Learn More</a>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    Parkinson’s
+                </li>
+                <li class="cs-li">
+                    MS
+                </li>
+                <li class="cs-li">
+                    Stroke
+                </li>
+                <li class="cs-li">
+                    SCI
+                </li>
+                <li class="cs-li">
+                    Vestibular
+                </li>
+                <li class="cs-li">
+                    Balance/Gait disorders
+                </li>
+                <li class="cs-li">
+                    Carpal Tunnel
+                </li>
+                <li class="cs-li">
+                    Back Pain
+                </li>
+                <li class="cs-li">
+                    Hip/Knee Pain
+                </li>
+                <li class="cs-li">
+                    Shoulder Pain
+                </li>
+            </ul>
         </div>
     </div>
 </section>
 
 <!-- ============================================ -->
-<!--                    FAQ                       -->
+<!--                    Locations                 -->
 <!-- ============================================ -->
 
-<section id="faq-1108">
+<section id="services-1356">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">FAQ’s</span>
-            <h2 class="cs-title">Frequently Asked Questions</h2>
-            <picture class="cs-picture">
-                <!--Mobile Image -->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 716, height: 720}) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 716, height: 720}) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 716, height: 720}) | jpeg %}" type="image/jpeg">
-                <!--Tablet Image -->
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | jpeg %}" type="image/jpeg">
-                <!--Desktop Image -->
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | jpeg %}" alt="massage products" width="1044" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">We’re Committed to Deliver Top High Quality Services</h2>
         </div>
-        <div class="cs-flex-group">
-            <ul class="cs-faq-group">
-                <!-- Active class added as default -->
-                <li class="cs-faq-item active">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            Do you have experience with car like mine?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides legal services such as giving legal advice, writing legal documents and providing policy counsel to governments. An attorney, on top of these things also holds a state or regional license to represent clients in a law court.
-                    </p>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/locations/sutton-coldfield/" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Sutton Coldfield</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" alt="location" width="414" height="305" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/locations/nuneaton/" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Nuneaton</h3>
+                </a>
+               <picture class="cs-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" alt="location" width="414" height="305" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/locations/hinckley/" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Hinckley</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" alt="location" width="414" height="305" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/locations/stratford-shrieves-walk/" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Stratford Shrieves Walk</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" alt="location" width="414" height="305" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/locations/stratford-henley-street/" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Stratford Henley Street</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" alt="location" width="414" height="305" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/locations/glasgow/" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Glasgow</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" alt="location" width="414" height="305" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+        </ul>
+        <a href="/all-locations/" class="cs-button-solid">All Locations</a>
+    </div>
+</section>                                
+                                
+<!-- ============================================ -->
+<!--               Side By Side                   -->
+<!-- ============================================ -->
+
+<section id="sbs-866">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Left Image-->
+            <picture class="cs-left-img">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | jpeg %}" alt="image description" width="439" height="560" loading="lazy" decoding="async">
+            </picture>
+            <!--Right Image-->
+             <picture class="cs-right-img">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | jpeg %}" alt="image description" width="439" height="560" loading="lazy" decoding="async">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Our Treatment List</span>
+            <h2 class="cs-title">List of Condition We Treat in Our Center</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab dolores minima similique incidunt quisquam neque rem quae fugiat, officia, id rerum deserunt? Recusandae sit praesentium vero itaque quas ullam illo, nobis quos repellat optio veritatis perferendis doloremque consequuntur assumenda.
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    Parkinson’s
                 </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            What is your plan cancellation policy?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
+                <li class="cs-li">
+                    MS
                 </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            What professional certifications you have?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
+                <li class="cs-li">
+                    Stroke
                 </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            What professional certifications you have?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
+                <li class="cs-li">
+                    SCI
                 </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            How much air pressure should I put my tires?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
+                <li class="cs-li">
+                    Vestibular
+                </li>
+                <li class="cs-li">
+                    Balance/Gait disorders
+                </li>
+                <li class="cs-li">
+                    Carpal Tunnel
+                </li>
+                <li class="cs-li">
+                    Back Pain
+                </li>
+                <li class="cs-li">
+                    Hip/Knee Pain
+                </li>
+                <li class="cs-li">
+                    Shoulder Pain
                 </li>
             </ul>
         </div>
@@ -269,7 +448,135 @@ eleventyNavigation:
 <!--                   Reviews                    -->
 <!-- ============================================ -->
                                 
-{% include 'components/reviews-1673.html' %}                             
+{% include 'components/reviews-727.html' %} 
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-351">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Asked questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+        </div>
+        <ul class="cs-faq-group">
+            <!-- Active class added as default -->
+            <li class="cs-faq-item active">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How much are house cleaning services?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Some 
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What is your plan cancellation policy?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How long should a house cleaning take?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How much are house cleaning services?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Can cleanings be scheduled?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                </p>
+            </li>
+        </ul>
+        <!--Added second UL, this allows you to open an FAQ item on each side without messing up the flexbox for the other -->
+        <ul class="cs-faq-group">
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How much are house cleaning services?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Some cleaning plans require a minimum commitment term. Cancelling your plan before the minimum term is complete will result in a $99 fee. If you want to learn more information about how to cancel, please inbox us.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        What is your plan cancellation policy?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How long should a house cleaning take?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        How much are house cleaning services?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button class="cs-button">
+                    <span class="cs-button-text">
+                        Can cleanings be scheduled?
+                    </span>
+                </button>
+                <p class="cs-item-p">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<script>const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+</script>         
                                 
                                 
                                 

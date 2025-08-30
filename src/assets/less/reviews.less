@@ -1,111 +1,137 @@
-/* PAGE-SPECIFIC STYLES FOR THE REVIEWS PAGE */
-
 /*-- -------------------------- -->
-<---           Reviews          -->
+<---          Reviews           -->
 <--- -------------------------- -*/
 
-/* Mobile */
+/* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #reviews {
-        margin: auto;
-        padding-top: (120/16rem);
-        padding-bottom: (50/16rem);
+    #reviews-607 {
+        padding: var(--sectionPadding);
+        background-color: var(--itemColor);
 
-        .container {
-            max-width: (1320/16rem);
-            width: 96%;
-        }
-
-        .review {
-            position: relative;
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at tablet */
+            max-width: (550/16rem);
+            margin: auto;
             display: flex;
             flex-direction: column;
-            border-radius: (5/16rem);
-            margin: auto;
-            margin-bottom: (100/16rem);
-            background: #fff;
-            max-width: (410/16rem);
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
             width: 100%;
-            padding: (64/16rem) (30/16rem) (18/16rem) (30/16rem);
-            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
 
-            .profile {
-                position: absolute;
-                top: calc(-51 / 16 * 1rem);
-                left: (30/16rem);
+        .cs-card-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: (20/16rem);
+        }
+
+        .cs-item {
+            list-style: none;
+            width: 100%;
+            margin: 0;
+            /* 32px - 48px top & bottom */
+            /* 16px - 32px left & right */
+            padding: clamp(2rem, 7vw, 3rem) clamp(1rem, 4vw, 2rem);
+            /* makes padding not affect height and width */
+            box-sizing: border-box;
+            background-color: var(--sectionColor);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-radius: 3.5rem 0 3.5rem 0;
+        }
+
+        .cs-icon {
+            /* 30px - 40px */
+            width: clamp(1.875rem, 4vw, 2.5rem);
+            height: auto;
+            margin: 0 0 (32/16rem) 0;
+            display: block;
+            /* changes svg icon color */
+            fill: var(--primary);
+        }
+
+        .cs-h3 {
+            /* 20px - 25px */
+            font-size: clamp(1.25rem, 4vw, 1.5625rem);
+            line-height: 1.2em;
+            font-weight: 700;
+            margin: 0 0 (24/16rem) 0;
+            color: var(--headerColor);
+        }
+
+        .cs-item-text {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 4vw, 1rem);
+            line-height: 1.5em;
+            max-width: (388/16rem);
+            margin: 0 0 (48/16rem) 0;
+            color: var(--bodyTextColor);
+        }
+
+        .cs-name {
+            font-size: (20/16rem);
+            line-height: 1.2em;
+            font-weight: 500;
+            margin: auto 0 0 0;
+            color: var(--headerColor);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: (8/16rem);
+            position: relative;
+            &:before {
+                content: "";
+                width: (8/16rem);
+                height: 1px;
+                background: currentColor;
                 display: block;
-                border-radius: 50%;
-                margin-bottom: (16/16rem);
-                margin-left: 0;
-                height: (99/16rem);
-                width: (99/16rem);
-            }
-
-            p {
-                margin-bottom: (28/16rem);
-                line-height: 1.5em;
-                text-align: left;
-            }
-
-            .star-group {
-                display: flex;
-                flex-wrap: nowrap;
-                justify-content: space-between;
-                align-items: center;
-                border-top: 1px solid #e7e7e7;
-                margin-top: auto;
-                padding-top: (16/16rem);
-
-                .name {
-                    display: block;
-                    line-height: (24/16rem);
-                    font-weight: bold;
-                    color: #1a1a1a;
-                    text-align: left;
-                }
-
-                .desc {
-                    display: block;
-                    font-weight: 400;
-                    color: #575757;
-                }
-
-                img {
-                    display: block;
-                    margin: 0;
-                    height: (15/16rem);
-                    width: (91/16rem);
-                }
-            }
-            &:last-of-type {
-                margin-bottom: 0;
+                position: relative;
             }
         }
     }
 }
 
-/* Tablet */
+/* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #reviews {
-        padding-top: (150/16rem);
-        padding-bottom: (50/16rem);
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 0;
-            font-size: ~"min(1.4vw, 1em)";
-            column-gap: (30/16rem);
+    #reviews-607 {
+        .cs-container {
+            max-width: (1280/16rem);
         }
 
-        .review {
-            margin: 0;
-            margin-bottom: (150/16rem);
+        .cs-card-group {
+            /* we went grid on tablet so that we can have an even spaced section with this design. Flexbox has a hard time making this type of design work with even gaps. */
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            align-items: stretch;
+        }
 
-            &:last-of-type {
-                margin-bottom: (150/16rem);
-            }
+        .cs-item {
+            grid-column: span 6;
+        }
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #reviews-607 {
+        .cs-item {
+            grid-column: span 4;
         }
     }
 }
@@ -113,19 +139,29 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #reviews {
-            .review {
-                background: var(--medium);
+        #reviews-607 {
+            background-color: var(--dark);
+            .cs-topper {
+                color: var(--primary);
+            }
 
-                .name {
-                    color: #fff;
-                }
+            .cs-title,
+            .cs-text,
+            .cs-h3,
+            .cs-name,
+            .cs-item-text {
+                color: var(--bodyTextColorWhite);
+            }
 
-                .desc {
-                    opacity: 0.7;
-                    color: #fff;
-                }
+            .cs-text,
+            .cs-item-text {
+                opacity: 0.8;
+            }
+
+            .cs-item {
+                background-color: var(--medium);
             }
         }
     }
 }
+                                

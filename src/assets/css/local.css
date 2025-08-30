@@ -5,7 +5,7 @@
 @media only screen and (min-width: 0rem) {
   #sbs-867 {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
+    background-color: var(--itemColor);
   }
   #sbs-867 .cs-container {
     width: 100%;
@@ -48,6 +48,7 @@
     /* 400px - 775px */
     height: clamp(25rem, 70vw, 48.4375rem);
     overflow: hidden;
+    border-radius: clamp(6.25rem, 17vw, 12.5rem) 0 clamp(6.25rem, 17vw, 12.5rem) 0;
   }
   #sbs-867 .cs-picture img {
     position: absolute;
@@ -84,7 +85,7 @@
     background-color: var(--dark);
   }
   body.dark-mode #sbs-867 .cs-topper {
-    color: var(--primaryLight);
+    color: var(--primary);
   }
   body.dark-mode #sbs-867 .cs-title,
   body.dark-mode #sbs-867 .cs-text {
@@ -98,15 +99,17 @@
   }
 }
 /*-- -------------------------- -->
-<---     Featured Service 2     -->
+<---   Side By Side Reverse     -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbs-r-870 {
+  #sbs-r-869 {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
+    /* clips overlapping cs-image-group */
+    overflow: hidden;
+    background-color: var(--sectionColor);
   }
-  #sbs-r-870 .cs-container {
+  #sbs-r-869 .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 34.375rem;
@@ -115,110 +118,355 @@
     flex-direction: column;
     align-items: center;
     /* 48px - 64px */
-    gap: clamp(3rem, 7vw, 4rem);
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
   }
-  #sbs-r-870 .cs-content {
+  #sbs-r-869 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
-    max-width: 33.875rem;
-    /* prevents padding from affecting width and height */
-    box-sizing: border-box;
+    max-width: 32.625rem;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #sbs-r-870 .cs-title {
-    /* 17 characters wide including spaces */
-    max-width: 17ch;
+  #sbs-r-869 .cs-title {
+    /* 20 characters wide including spaces */
+    max-width: 20ch;
   }
-  #sbs-r-870 .cs-text {
+  #sbs-r-869 .cs-text {
     margin-bottom: 1rem;
   }
-  #sbs-r-870 .cs-text:last-of-type {
+  #sbs-r-869 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbs-r-870 .cs-picture {
-    display: block;
-    position: relative;
-    width: 100%;
-    max-width: 39.375rem;
-    /* 400px - 775px */
-    height: clamp(25rem, 70vw, 48.4375rem);
-    overflow: hidden;
+  #sbs-r-869 .cs-ul {
+    margin: 0 0 2rem 0;
+    padding: 0;
+    columns: 2;
   }
-  #sbs-r-870 .cs-picture img {
+  #sbs-r-869 .cs-li {
+    list-style: none;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.75rem;
+    position: relative;
+  }
+  #sbs-r-869 .cs-li:before {
+    /* accent shape */
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 0.5rem;
+    background: #bababa;
+    border-radius: 0.25rem 0 0.25rem 0;
+    display: block;
+    /* prevents flexbox from squsihing it */
+    flex: none;
+  }
+  #sbs-r-869 .cs-image-group {
+    /* using ems so we can scale the whole section using a font size min/max. Font size (.61em) max changes at desktop */
+    font-size: min(1.61vw, .61em);
+    width: 56.125em;
+    height: 50.875em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
+  #sbs-r-869 .cs-image-group:before {
+    /* accent shape */
+    content: "";
+    width: 18.6875em;
+    height: 14.625em;
+    background: #e6d1a2;
+    border-radius: 0 6.25em 0 6.25em;
+    opacity: 1;
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    display: block;
+    bottom: 0;
+    left: 28.6875em;
+  }
+  #sbs-r-869 .cs-left-img {
+    width: 27.4375em;
+    height: 35em;
+    border-radius: 12.5em 0 12.5em 0;
+    /* clips img corners */
+    overflow: hidden;
+    display: block;
+  }
+  #sbs-r-869 .cs-left-img img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    display: block;
+    /* flips it horizontally the opposite of the parent. This way images have the same orientation as the source image */
+    transform: scaleX(-1);
+  }
+  #sbs-r-869 .cs-right-img {
+    width: 27.4375em;
+    height: 35em;
+    border-radius: 0 12.5em 0 12.5em;
+    /* clips img corners */
+    overflow: hidden;
+    display: block;
+    transform: translateY(6.25em);
+  }
+  #sbs-r-869 .cs-right-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* flips it horizontally the opposite of the parent. This way images have the same orientation as the source image */
+    transform: scaleX(-1);
   }
 }
-/* Desktop - 1024px */
+/* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #sbs-r-870 {
-    padding: var(--sectionPadding);
-  }
-  #sbs-r-870 .cs-container {
-    flex-direction: row;
+  #sbs-r-869 .cs-container {
     max-width: 80rem;
+    flex-direction: row;
     justify-content: space-between;
   }
-  #sbs-r-870 .cs-content {
-    width: 53%;
-    /* reset the padding, add the section padding back to the section container */
-    padding: 0;
-    /* sends it to the left in the 1st position */
-    order: -1;
+  #sbs-r-869 .cs-image-group {
+    font-size: min(.8vw, 1em);
+    /* prevents flexbox from squishing it */
+    flex: none;
+    order: 2;
   }
-  #sbs-r-870 .cs-picture {
-    width: 47vw;
-    position: relative;
+}
+/* Large Desktop 1500px */
+@media only screen and (min-width: 93.75rem) {
+  #sbs-r-869 .cs-container {
+    justify-content: flex-end;
+  }
+  #sbs-r-869 .cs-image-group {
+    font-size: inherit;
+    /* The cs-image-group is actually REALLY big. It's so big, the design has it overlapping the normal 1280px container by 220px.  This is just a design choice that "breaks" the container and creates a more dynamic design and website. */
+    transform: translateX(13.75rem);
+  }
+  #sbs-r-869 .cs-content {
+    /* we absolutely position the cs-content so the cs-image-group can remain position relative and dictate the height of the section. Since the cs-content is smaller in height, if it remained relative then the height of the container would only be as tall as the .cs-content and the absolutely positioned cs-image-group would overlap into the top and bottom neiboring sections. */
+    flex: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #sbs-r-870 {
-    background-color: var(--dark);
+  body.dark-mode #sbs-r-869 {
+    background-color: rgba(0, 0, 0, 0.2);
   }
-  body.dark-mode #sbs-r-870 .cs-topper {
-    color: var(--primaryLight);
+  body.dark-mode #sbs-r-869 .cs-topper {
+    color: var(--primary);
   }
-  body.dark-mode #sbs-r-870 .cs-title,
-  body.dark-mode #sbs-r-870 .cs-text {
+  body.dark-mode #sbs-r-869 .cs-title,
+  body.dark-mode #sbs-r-869 .cs-text,
+  body.dark-mode #sbs-r-869 .cs-li {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #sbs-r-870 .cs-text {
+  body.dark-mode #sbs-r-869 .cs-text,
+  body.dark-mode #sbs-r-869 .cs-li {
     opacity: 0.8;
   }
-  body.dark-mode #sbs-r-870 .cs-picture:before {
-    background-color: var(--accent);
+  body.dark-mode #sbs-r-869 .cs-image-group:before {
+    opacity: 0.3;
   }
 }
 /*-- -------------------------- -->
-<---            FAQ             -->
+<---       Side By Side         -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #faq-1108 {
+  #sbs-866 {
     padding: var(--sectionPadding);
-    position: relative;
+    /* clips overlapping cs-image-group */
+    overflow: hidden;
+    background-color: var(--sectionColor);
   }
-  #faq-1108 .cs-container {
+  #sbs-866 .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
-    max-width: 36.5rem;
+    max-width: 34.375rem;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* 32px - 48px */
-    gap: clamp(2rem, 6vw, 3rem);
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
   }
-  #faq-1108 .cs-content {
+  #sbs-866 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 32.625rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #sbs-866 .cs-title {
+    /* 20 characters wide including spaces */
+    max-width: 20ch;
+  }
+  #sbs-866 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #sbs-866 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbs-866 .cs-ul {
+    margin: 0 0 2rem 0;
+    padding: 0;
+    columns: 2;
+  }
+  #sbs-866 .cs-li {
+    list-style: none;
+    margin: 0 0 0.5rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.75rem;
+    position: relative;
+  }
+  #sbs-866 .cs-li:before {
+    /* accent shape */
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 0.5rem;
+    background: #bababa;
+    border-radius: 0.25rem 0 0.25rem 0;
+    display: block;
+  }
+  #sbs-866 .cs-image-group {
+    /* using ems so we can scale the whole section using a font size min/max. Font size (.61em) max changes at desktop */
+    font-size: min(1.61vw, .61em);
+    width: 56.125em;
+    height: 50.875em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+  }
+  #sbs-866 .cs-image-group:before {
+    /* accent shape */
+    content: "";
+    width: 18.6875em;
+    height: 14.625em;
+    background: #e6d1a2;
+    border-radius: 6.25em 0 6.25em 0;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 8.75em;
+  }
+  #sbs-866 .cs-left-img {
+    width: 27.4375em;
+    height: 35em;
+    border-radius: 0 12.5em 0 12.5em;
+    /* clips img corners */
+    overflow: hidden;
+    display: block;
+  }
+  #sbs-866 .cs-left-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #sbs-866 .cs-right-img {
+    width: 27.4375em;
+    height: 35em;
+    border-radius: 12.5em 0 12.5em 0;
+    /* clips img corners */
+    overflow: hidden;
+    display: block;
+    transform: translateY(6.25em);
+  }
+  #sbs-866 .cs-right-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs-866 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #sbs-866 .cs-image-group {
+    font-size: min(.8vw, 1em);
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+}
+/* Large Desktop 1500px */
+@media only screen and (min-width: 93.75rem) {
+  #sbs-866 .cs-image-group {
+    font-size: inherit;
+    /* The cs-image-group is actually REALLY big. It's so big, the design has it overlapping the normal 1280px container by 220px.  This is just a design choice that "breaks" the container and creates a more dynamic design and website. */
+    transform: translateX(-13.75rem);
+  }
+  #sbs-866 .cs-content {
+    /* we absolutely position the cs-content so the cs-image-group can remain position relative and dictate the height of the section. Since the cs-content is smaller in height, if it remained relative then the height of the container would only be as tall as the .cs-content and the absolutely positioned cs-image-group would overlap into the top and bottom neighboring sections. */
+    flex: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-866 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #sbs-866 .cs-topper {
+    color: var(--primary);
+  }
+  body.dark-mode #sbs-866 .cs-title,
+  body.dark-mode #sbs-866 .cs-text,
+  body.dark-mode #sbs-866 .cs-li {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs-866 .cs-text,
+  body.dark-mode #sbs-866 .cs-li {
+    opacity: 0.8;
+  }
+  body.dark-mode #sbs-866 .cs-image-group:before {
+    opacity: 0.3;
+  }
+}
+/*-- -------------------------- -->
+<---          Locations         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-1356 {
+    padding: var(--sectionPadding);
+    background-color: var(--itemColor);
+    position: relative;
+    z-index: 10;
+  }
+  #services-1356 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-1356 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -227,79 +475,417 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #faq-1108 .cs-title {
-    /* 32px - 48px */
-    margin: 0 0 clamp(2rem, 5vw, 3rem);
+  #services-1356 .cs-title {
+    max-width: 25ch;
+    margin: 0;
   }
-  #faq-1108 .cs-picture {
+  #services-1356 .cs-card-group {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    /* 360px - 400px */
-    height: clamp(22.5rem, 54vw, 25rem);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #services-1356 .cs-item {
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    height: 19.0625rem;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary);
+    border-radius: 3.5rem 0 3.5rem 0;
+    /* clips background image corners */
+    overflow: hidden;
+    box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    grid-column: span 12;
+    grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+  }
+  #services-1356 .cs-item:hover .cs-background:before {
+    background-color: var(--primary);
+    opacity: 0.84;
+  }
+  #services-1356 .cs-item:hover .cs-background img {
+    transform: scale(1.2);
+  }
+  #services-1356 .cs-link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    /* padding goes on the link, not the cs-item as is normal. We do this because we want the whole card to be hoverable. So we add the padding to the link tag to create the space inside the card. By adding the space inside the cs-link tag we can make the whole card hoverable since the padding is now contributing to the height and widht of the link */
+    padding: 1.5rem;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #services-1356 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: bold;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    transition: color 0.3s;
+  }
+  #services-1356 .cs-span {
+    /* forces the h3 to alwasy be two lines */
+    display: block;
+  }
+  #services-1356 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #services-1356 .cs-background:before {
+    /* background color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: var(--secondary);
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.3s, opacity 0.3s;
+  }
+  #services-1356 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+    transition: transform 0.6s;
+  }
+}
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+  #services-1356 .cs-content {
+    text-align: left;
+    align-items: flex-start;
+  }
+  #services-1356 .cs-item {
+    grid-column: span 6;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #services-1356 .cs-item {
+    grid-column: span 4;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #services-1356 {
+    background-color: var(--dark);
+  }
+  body.dark-mode #services-1356 .cs-topper {
+    color: var(--primary);
+  }
+  body.dark-mode #services-1356 .cs-title {
+    color: var(--bodyTextColorWhite);
+  }
+}
+/*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews-727 {
+    padding: var(--sectionPadding);
+    position: relative;
+    /* Add this line */
+  }
+  #reviews-727::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-image: url('/assets/svgs/pattern-t.svg');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+  #reviews-727::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-image: url('/assets/svgs/pattern-b.svg');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+  #reviews-727 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #reviews-727 .cs-picture {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #reviews-727 .cs-picture:before {
+    /* black color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: var(--secondary);
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #reviews-727 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #reviews-727 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #reviews-727 .cs-title {
+    max-width: 20ch;
+    color: #fff;
+  }
+  #reviews-727 .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  #reviews-727 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  #reviews-727 .cs-item {
+    list-style: none;
+    width: 100%;
+    border-radius: 3.5rem 0 3.5rem 0;
+    margin: 0;
+    /* 32px - 48px top & bottom */
+    /* 16px - 32px left & right */
+    padding: clamp(2rem, 7vw, 3rem) clamp(1rem, 4vw, 2rem);
+    /* makes padding not affect height and width */
+    box-sizing: border-box;
+    background-color: var(--itemColor);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #reviews-727 .cs-icon {
+    /* 30px - 40px */
+    width: clamp(1.875rem, 4vw, 2.5rem);
+    height: auto;
+    margin: 0 0 2rem 0;
+    display: block;
+    /* changes svg icon color */
+    fill: var(--primary);
+  }
+  #reviews-727 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 4vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 1.5rem 0;
+    color: var(--headerColor);
+  }
+  #reviews-727 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 4vw, 1rem);
+    line-height: 1.5em;
+    margin: 0 0 3rem 0;
+    color: var(--bodyTextColor);
+  }
+  #reviews-727 .cs-name {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 500;
+    margin: auto 0 0 0;
+    color: var(--headerColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+  }
+  #reviews-727 .cs-name:before {
+    content: "";
+    width: 0.5rem;
+    height: 1px;
+    background: currentColor;
     display: block;
     position: relative;
   }
-  #faq-1108 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #reviews-727 .cs-container {
+    max-width: 80rem;
   }
-  #faq-1108 .cs-faq-group {
+  #reviews-727 .cs-card-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #reviews-727 .cs-item {
+    width: 48.5%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #reviews-727 .cs-topper,
+  body.dark-mode #reviews-727 .cs-title,
+  body.dark-mode #reviews-727 .cs-text,
+  body.dark-mode #reviews-727 .cs-h3,
+  body.dark-mode #reviews-727 .cs-item-text,
+  body.dark-mode #reviews-727 .cs-name {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #reviews-727 .cs-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #reviews-727 .cs-item {
+    background-color: var(--medium);
+  }
+}
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #faq-351 {
+    padding: var(--sectionPadding);
+    background: var(--sectionColor);
+  }
+  #faq-351 .cs-container {
     width: 100%;
-    max-width: 40.625rem;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    row-gap: clamp(3rem, 6vw, 4rem);
+  }
+  #faq-351 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #faq-351 .cs-title {
+    margin: 0;
+  }
+  #faq-351 .cs-faq-group {
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 0.75rem;
   }
-  #faq-1108 .cs-faq-item {
+  #faq-351 .cs-faq-item {
     list-style: none;
     width: 100%;
-    background-color: #f7f7f7;
-    /* clips all corners of the button that overlap the rounded border */
-    overflow: hidden;
+    border-bottom: 1px solid #e8e8e8;
     transition: border-bottom 0.3s;
   }
-  #faq-1108 .cs-faq-item.active .cs-button {
+  #faq-351 .cs-faq-item.active {
+    border-color: var(--primary);
+  }
+  #faq-351 .cs-faq-item.active .cs-button {
     color: var(--primary);
   }
-  #faq-1108 .cs-faq-item.active .cs-button:before {
+  #faq-351 .cs-faq-item.active .cs-button:before {
     background-color: var(--primary);
     transform: rotate(315deg);
   }
-  #faq-1108 .cs-faq-item.active .cs-button:after {
+  #faq-351 .cs-faq-item.active .cs-button:after {
     background-color: var(--primary);
     transform: rotate(-315deg);
   }
-  #faq-1108 .cs-faq-item.active .cs-item-p {
+  #faq-351 .cs-faq-item.active .cs-item-p {
     height: auto;
     /* 20px - 24px bottom */
     /* 16px - 24px left & right */
     padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 1.3vw, 1.5rem);
     opacity: 1;
   }
-  #faq-1108 .cs-button {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 2.5vw, 1.25rem);
+  #faq-351 .cs-button {
+    font-size: 1rem;
     line-height: 1.2em;
+    font-family: Josefin Sans;
     text-align: left;
     font-weight: bold;
-    /* 20px - 24px */
-    padding: clamp(1.25rem, 2vw, 1.5rem);
-    background-color: #f7f7f7;
+    /* 16px - 20px */
+    padding: clamp(1rem, 1.3vw, 1.25rem);
     border: none;
+    background: transparent;
     color: var(--headerColor);
     display: block;
     width: 100%;
     position: relative;
     transition: background-color 0.3s, color 0.3s;
   }
-  #faq-1108 .cs-button:hover {
+  #faq-351 .cs-button:hover {
     cursor: pointer;
   }
-  #faq-1108 .cs-button:before {
+  #faq-351 .cs-button:before {
     /* left line */
     content: "";
     width: 0.5rem;
@@ -309,14 +895,14 @@
     border-radius: 50%;
     position: absolute;
     display: block;
-    top: 50%;
+    top: 45%;
     right: 1.5rem;
     transform: rotate(45deg);
     /* animate the transform from the left side of the x axis, and the center of the y */
     transform-origin: left center;
     transition: transform 0.5s;
   }
-  #faq-1108 .cs-button:after {
+  #faq-351 .cs-button:after {
     /* right line */
     content: "";
     width: 0.5rem;
@@ -326,18 +912,18 @@
     border-radius: 50%;
     position: absolute;
     display: block;
-    top: 50%;
+    top: 45%;
     right: 1.3125rem;
     transform: rotate(-45deg);
     /* animate the transform from the right side of the x axis, and the center of the y */
     transform-origin: right center;
     transition: transform 0.5s;
   }
-  #faq-1108 .cs-button-text {
+  #faq-351 .cs-button-text {
     width: 80%;
     display: block;
   }
-  #faq-1108 .cs-item-p {
+  #faq-351 .cs-item-p {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
@@ -355,47 +941,54 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #faq-1108 .cs-container {
+  #faq-351 .cs-container {
     max-width: 80rem;
     flex-direction: row;
     justify-content: space-between;
-    align-items: stretch;
-  }
-  #faq-1108 .cs-content {
-    width: 40%;
-    text-align: left;
+    /* push everything to the top */
     align-items: flex-start;
-    /* prevents flexbox from squishing it */
-    flex: none;
+    flex-wrap: wrap;
+  }
+  #faq-351 .cs-content {
+    width: 100%;
+  }
+  #faq-351 .cs-faq-group {
+    width: 48%;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #faq-1108 .cs-title,
-  body.dark-mode #faq-1108 .cs-item-p {
+  body.dark-mode #faq-351 {
+    background-color: var(--dark);
+  }
+  body.dark-mode #faq-351 .cs-picture {
+    border-color: var(--accent);
+  }
+  body.dark-mode #faq-351 .cs-topper {
+    color: var(--primary);
+  }
+  body.dark-mode #faq-351 .cs-title,
+  body.dark-mode #faq-351 .cs-item-p {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #faq-1108 .cs-faq-item {
-    background-color: var(--accent);
+  body.dark-mode #faq-351 .cs-faq-item {
+    border-color: rgba(255, 255, 255, 0.2);
   }
-  body.dark-mode #faq-1108 .cs-faq-item.active .cs-button {
+  body.dark-mode #faq-351 .cs-faq-item.active {
+    border-color: var(--primary);
+  }
+  body.dark-mode #faq-351 .cs-faq-item.active .cs-button {
+    color: var(--primary);
+  }
+  body.dark-mode #faq-351 .cs-faq-item.active .cs-button:before,
+  body.dark-mode #faq-351 .cs-faq-item.active .cs-button:after {
     background-color: var(--primary);
+  }
+  body.dark-mode #faq-351 .cs-button {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #faq-1108 .cs-faq-item.active .cs-button:before,
-  body.dark-mode #faq-1108 .cs-faq-item.active .cs-button:after {
-    background-color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #faq-1108 .cs-faq-item.active .cs-item-p {
-    /* 20px - 24px */
-    padding-top: clamp(1.25rem, 1.3vw, 1.5rem);
-  }
-  body.dark-mode #faq-1108 .cs-button {
-    background-color: var(--accent);
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #faq-1108 .cs-button:before,
-  body.dark-mode #faq-1108 .cs-button:after {
+  body.dark-mode #faq-351 .cs-button:before,
+  body.dark-mode #faq-351 .cs-button:after {
     background-color: var(--bodyTextColorWhite);
   }
 }

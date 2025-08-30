@@ -1,0 +1,252 @@
+---
+title: 'All locations | Code Stitch Web Designs'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'all-locations/'
+eleventyNavigation:
+    key: All Locations
+    order: 3100
+    parent: Locations
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/all-locations.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Expert Thai Massage in Birmingham</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/banner-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/banner.webp">
+        <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="massage" loading="eager" width="2500" height="1667">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--            Side By Side Reverse              -->
+<!-- ============================================ -->
+
+<section id="sbs-r-869">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Right Image-->
+             <picture class="cs-right-img">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | jpeg %}" alt="image description" width="439" height="560" loading="lazy" decoding="async">
+            </picture>
+            <!--Left Image-->
+            <picture class="cs-left-img">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 284, height: 362}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 536, height: 684}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/about.jpg" | resize({width: 878, height: 1120}) | jpeg %}" alt="image description" width="439" height="560" loading="lazy" decoding="async">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Our Treatment List</span>
+            <h2 class="cs-title">List of Condition We Treat in Our Center</h2>
+            <p class="cs-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ab dolores minima similique incidunt quisquam neque rem quae fugiat, officia, id rerum deserunt? Recusandae sit praesentium vero itaque quas ullam illo, nobis quos repellat optio veritatis perferendis doloremque consequuntur assumenda.
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    Parkinson’s
+                </li>
+                <li class="cs-li">
+                    MS
+                </li>
+                <li class="cs-li">
+                    Stroke
+                </li>
+                <li class="cs-li">
+                    SCI
+                </li>
+                <li class="cs-li">
+                    Vestibular
+                </li>
+                <li class="cs-li">
+                    Balance/Gait disorders
+                </li>
+                <li class="cs-li">
+                    Carpal Tunnel
+                </li>
+                <li class="cs-li">
+                    Back Pain
+                </li>
+                <li class="cs-li">
+                    Hip/Knee Pain
+                </li>
+                <li class="cs-li">
+                    Shoulder Pain
+                </li>
+            </ul>
+            <a href="" class="cs-button-solid">Schedule An Appointment</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Locations                 -->
+<!-- ============================================ -->
+
+<section id="services-1356">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">We’re Committed to Deliver Top High Quality Services</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="/locations/sutton-coldfield/" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Sutton Coldfield</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" alt="location" width="414" height="305" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/locations/nuneaton/" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Nuneaton</h3>
+                </a>
+               <picture class="cs-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" alt="location" width="414" height="305" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/locations/hinckley/" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Hinckley</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" alt="location" width="414" height="305" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/locations/stratford-shrieves-walk/" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Stratford Shrieves Walk</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" alt="location" width="414" height="305" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/locations/stratford-henley-street/" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Stratford Henley Street</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" alt="location" width="414" height="305" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="/locations/glasgow/" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Glasgow</h3>
+                </a>
+                <picture class="cs-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 576, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 972, height: 610}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/service-5.jpg" | resize({width: 828, height: 610}) | jpeg %}" alt="location" width="414" height="305" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>               
+
+{% endblock %}

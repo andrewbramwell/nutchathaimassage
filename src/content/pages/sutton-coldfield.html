@@ -1,0 +1,238 @@
+---
+title: 'Sutton Coldfield Location | Nutcha Thai Massage'
+description: 'Expert Thai massage therapy in Sutton Coldfield. Traditional Thai massage, deep tissue, hot oil massage and more. Book online or walk-ins welcome.'
+locationKey: 'sutton-coldfield'
+preloadImg: '/assets/images/banner.webp'
+permalink: 'locations/sutton-coldfield/'
+eleventyNavigation:
+    key: Sutton Coldfield 
+    order: 3200
+    parent: Locations
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/locations.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+
+    <!-- JSON Schema Markup for Location Page -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "{{ client.businessType }}",
+            "@id": "{{ client.domain }}{{ page.url }}#business",
+            "name": "{{ client.locations[locationKey].name }}",
+            {% if preloadImg %}"image": "{{ preloadImg }}",{% endif %}
+            {% if client.locations[locationKey].phoneFormatted %}"telephone": "{{ client.locations[locationKey].phoneFormatted }}",{% endif %}
+            {% if client.locations[locationKey].email %}"email": "{{ client.locations[locationKey].email }}",{% endif %}
+            {% if client.priceRange %}"priceRange": "{{ client.priceRange }}",{% endif %}
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "{{ client.locations[locationKey].address.lineOne }}{% if client.locations[locationKey].address.lineTwo %}, {{ client.locations[locationKey].address.lineTwo }}{% endif %}",
+                "addressLocality": "{{ client.locations[locationKey].address.city }}",
+                "addressRegion": "{{ client.locations[locationKey].address.state }}",
+                "postalCode": "{{ client.locations[locationKey].address.zip }}",
+                "addressCountry": "{{ client.locations[locationKey].address.country }}"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "{{ client.locations[locationKey].geo.latitude }}",
+                "longitude": "{{ client.locations[locationKey].geo.longitude }}"
+            },
+            "url": "{{ client.domain }}{{ page.url }}",
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "10:00",
+                "closes": "20:00"
+            },
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Thai Massage Services",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Head and Foot Reflexology"
+                        }
+                    },
+                    {
+                        "@type": "Offer", 
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Relaxing Hot Oil Massage"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service", 
+                            "name": "Deep Tissue Massage"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Thai Traditional Massage"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Hot Stone Massage"
+                        }
+                    }
+                ]
+            },
+            {% if client.locations[locationKey].onlineBooking and not client.locations[locationKey].onlineBooking.includes("placeholder") %}
+            "potentialAction": {
+                "@type": "ReserveAction",
+                "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "{{ client.locations[locationKey].onlineBooking }}",
+                    "actionPlatform": [
+                        "http://schema.org/DesktopWebPlatform",
+                        "http://schema.org/MobileWebPlatform"
+                    ]
+                },
+                "result": {
+                    "@type": "Reservation",
+                    "name": "Massage Appointment"
+                }
+            },
+            {% endif %}
+            "areaServed": {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "{{ client.locations[locationKey].geo.latitude }}",
+                    "longitude": "{{ client.locations[locationKey].geo.longitude }}"
+                },
+                "geoRadius": "{{ client.serviceRadius }}"
+            },
+            "sameAs": [
+                "{{ client.locations[locationKey].socials.facebook }}"
+            ]
+        }
+    </script>
+    
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Expert Thai Massage in Sutton Coldfield</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/banner-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/banner.webp">
+        <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="massage" loading="eager" width="2500" height="1667">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                    Massages                  -->
+<!-- ============================================ -->
+                                
+{% include 'components/services-877.html' %} 
+
+<!-- ============================================ -->
+<!--                Why Choose Us                 -->
+<!-- ============================================ -->
+                                
+{% include 'components/why-choose-1772.html' %} 
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-607">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Trusted by Thousand of People & Companies</h2>
+            <p class="cs-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <svg class="cs-icon" viewBox="0 0 40 33" width="40" height="33" aria-hidden="true">
+                    <g clip-path="url(#clip0_1_30)">
+                        <path d="M9.17589 33H0L7.32198 0H22L9.17589 33Z"/>
+                        <path d="M27.1759 33H18L25.322 0H40L27.1759 33Z"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_30">
+                            <rect width="40" height="33" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <h3 class="cs-h3">Loving the color!</h3>
+                <p class="cs-item-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
+                </p>
+                <span class="cs-name">Daniel</span>
+            </li>
+            <li class="cs-item">
+                <svg class="cs-icon" viewBox="0 0 40 33" width="40" height="33" aria-hidden="true">
+                    <g clip-path="url(#clip0_1_30)">
+                        <path d="M9.17589 33H0L7.32198 0H22L9.17589 33Z"/>
+                        <path d="M27.1759 33H18L25.322 0H40L27.1759 33Z"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_30">
+                            <rect width="40" height="33" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <h3 class="cs-h3">Loving the color!</h3>
+                <p class="cs-item-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
+                </p>
+                <span class="cs-name">Daniel</span>
+            </li>
+            <li class="cs-item">
+                <svg class="cs-icon" viewBox="0 0 40 33" width="40" height="33" aria-hidden="true">
+                    <g clip-path="url(#clip0_1_30)">
+                        <path d="M9.17589 33H0L7.32198 0H22L9.17589 33Z"/>
+                        <path d="M27.1759 33H18L25.322 0H40L27.1759 33Z"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_30">
+                            <rect width="40" height="33" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <h3 class="cs-h3">Loving the color!</h3>
+                <p class="cs-item-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
+                </p>
+                <span class="cs-name">Daniel</span>
+            </li>
+        </ul>
+        <a href="{{ client.locations[locationKey].googleReview }}" target="_blank" rel="noopener" class="cs-button-solid">Leave Review</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Why Choose Us                 -->
+<!-- ============================================ -->
+                                
+{% include 'components/contact-1403.html' %} 
+
+
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+                                
+{% include 'components/cta-697.html' %} 
+
+{% endblock %}

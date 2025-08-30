@@ -6,6 +6,7 @@
 @media only screen and (min-width: 0rem) {
     #sbs-867 {
         padding: var(--sectionPadding);
+        background-color: var(--itemColor);
 
         .cs-container {
             width: 100%;
@@ -52,6 +53,7 @@
             /* 400px - 775px */
             height: clamp(25rem, 70vw, 48.4375rem);
             overflow: hidden;
+            border-radius: clamp(6.25rem, 17vw, 12.5rem) 0 clamp(6.25rem, 17vw, 12.5rem) 0;
 
             img {
                 position: absolute;
@@ -93,8 +95,9 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbs-867 {
+            background-color: var(--dark);
             .cs-topper {
-                color: var(--primaryLight);
+                color: var(--primary);
             }
 
             .cs-title,
@@ -123,7 +126,7 @@
     margin: 0 0 (32/16rem) 0;
     /* 16px - 32px */
     padding: clamp(1rem, 3vw, 2rem);
-    background-color: #f7f7f7;
+    background-color: var(--sectionColor);
     border-radius: (16/16rem);
     position: relative;
 
