@@ -1,129 +1,61 @@
 
+
 /*-- -------------------------- -->
-<---           Hero             -->
+<---    Featured Service 1      -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #hero-1160 {
-        /* 200px - 300px - leaving extra space for the navigation */
-        padding: clamp(12.5rem, 31.95vw, 18.75rem) (16/16rem) 0;
-        /* 150px - 300px */
-        padding-bottom: clamp(9.375rem, 22vw, 18.75rem);
-        /* prevents padding and border from affecting height and width */
-        box-sizing: border-box;
-        overflow: hidden;
-        position: relative;
-        z-index: 1;
-        position: relative; /* Add this line */
-
-        
-
-        // Repeating Bottom SVG Border
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 20px;
-            background-image: url('/assets/svgs/pattern-b.svg');
-            background-repeat: repeat-x;
-            background-size: auto 100%;
-            z-index: 2;
-            pointer-events: none;
-        }
+    #sbs-867 {
+        padding: var(--sectionPadding);
+        background-color: var(--itemColor);
 
         .cs-container {
             width: 100%;
-            max-width: (1280/16rem);
+            /* changes to 1280px at desktop */
+            max-width: (550/16rem);
             margin: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
             /* 48px - 64px */
-            gap: clamp(3rem, 6vw, 4rem);
+            gap: clamp(3rem, 7vw, 4rem);
         }
 
         .cs-content {
-            /* set text align to left if content needs to be left aligned */
-            text-align: center;
+            /* set text aling to left if content needs to be left aligned */
+            text-align: left;
             width: 100%;
-            max-width: (630/16rem);
+            max-width: (542/16rem);
+            /* prevents padding from affecting width and height */
+            box-sizing: border-box;
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
-            align-items: center;
-        }
-
-        .cs-topper {
-            font-size: var(--topperFontSize);
-            line-height: 1.2em;
-            text-transform: uppercase;
-            text-align: inherit;
-            letter-spacing: 0.1em;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: (4/16rem);
-            display: block;
+            align-items: flex-start;
         }
 
         .cs-title {
-            /* 39px - 61px */
-            font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-            font-weight: 700;
-            line-height: 1.2em;
-            text-align: inherit;
-            max-width: (829/16rem);
-            margin: 0 0 (16/16rem) 0;
-            color: #fff;
-            position: relative;
+            /* 17 characters wide including spaces */
+            max-width: 17ch;
         }
 
         .cs-text {
-            /* 16px - 20px */
-            font-size: clamp(1rem, 1.95vw, 1.25rem);
-            line-height: 1.5em;
-            text-align: inherit;
-            width: 100%;
-            /* 464px - 622px */
-            max-width: clamp(29rem, 60vw, 38.785rem);
-            margin: 0 0 (40/16rem) 0;
-            color: #fff;
-        }
-
-        .cs-graphic {
-            width: 100%;
-            height: auto;
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-        }
-
-        .cs-background {
-            width: 100%;
-            height: 100%;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -2;
-
-            &:before {
-                /* Overlay */
-                content: "";
-                width: 100%;
-                height: 100%;
-                background: #452C20;
-                opacity: 0.75;
-                position: absolute;
-                display: block;
-                top: 0;
-                left: 0;
-                z-index: 1;
-                /* prevents the cursor from interacting with it */
-                pointer-events: none;
+            margin-bottom: (16/16rem);
+            &:last-of-type {
+                margin-bottom: (32/16rem);
             }
+        }
+
+        .cs-picture {
+            display: block;
+            position: relative;
+            width: 100%;
+            max-width: (630/16rem);
+            /* 400px - 775px */
+            height: clamp(25rem, 70vw, 48.4375rem);
+            overflow: hidden;
+            border-radius: clamp(6.25rem, 17vw, 12.5rem) 0 clamp(6.25rem, 17vw, 12.5rem) 0;
 
             img {
                 position: absolute;
@@ -132,24 +64,57 @@
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
-                /* makes the top of the image start at the top of the parent */
-                object-position: top;
             }
         }
     }
 }
 
-/* Large Desktop - 1600px - Prallax Effect */
-@media only screen and (min-width: 100rem) {
-    #hero-1160 {
-        .cs-background {
-            background: url("/assets/images/hero.webp");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            img {
-                display: none;
+/* Tablet - 768px */
+@media only screen and (min-width: 64rem) {
+    #sbs-867 {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            flex-direction: row;
+            max-width: (1280/16rem);
+            justify-content: space-between;
+        }
+
+        .cs-content {
+            width: 53%;
+            /* reset the padding, add the section padding back to the section container */
+            padding: 0;
+        }
+
+        .cs-picture {
+            width: 47vw;
+            position: relative;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #sbs-867 {
+            background-color: var(--dark);
+            .cs-topper {
+                color: var(--primary);
+            }
+
+            .cs-title,
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text {
+                opacity: 0.8;
+            }
+
+            .cs-picture {
+                &:before {
+                    background-color: var(--accent);
+                }
             }
         }
     }
@@ -324,8 +289,9 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #services-877 {
+            background-color: rgba(0, 0, 0, 0.2);
             .cs-topper {
-                color: var(--primaryLight);
+                color: var(--primary);
             }
 
             .cs-title,
@@ -517,11 +483,6 @@
     }
 }
 
-
-
-
-
-
 /*-- -------------------------- -->
 <---          Contact           -->
 <--- -------------------------- -*/
@@ -634,7 +595,7 @@
             width: (60/16rem);
             height: (60/16rem);
             margin: 0;
-            border-radius: 50%;
+            border-radius: 1rem 0 1rem 0;
             border: 1px solid #bababa;
             display: flex;
             justify-content: center;
@@ -661,7 +622,7 @@
             /* prevents flexbox from affecting height and width */
             box-sizing: border-box;
             background-color: var(--sectionColor);
-            border-radius: 4rem 0 4rem 0;
+            border-radius: 2.5rem 0 2.5rem 0;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -772,181 +733,54 @@
     }
 }
 
-/*-- -------------------------- -->
-<---    Google Maps Iframe      -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #map-1403 {
-        iframe {
-            width: 100%;
-            /* 400px - 560px */
-            height: clamp(25rem, 42vw, 35rem);
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*-- -------------------------- -->
-<---           Stats            -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0em) {
-    #ContactStrip-721 {
-        padding: var(--sectionPadding);
-        background-color: var(--secondary);
-        position: relative;
-        z-index: 1;
-
-        .cs-stat-group {
-            width: 100%;
-            /* changes to 1280px at desktop */
-            max-width: (600/16rem);
-            margin: auto;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: (40/16rem);
-        }
-
-        .cs-item {
-            list-style: none;
-            width: (290/16rem);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-
-            &:hover {
-                .cs-picture {
-                    background-color: var(--primary);
-                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-                    transform: scale(1.1);
-                }
-            }
-        }
-
-        .cs-picture {
-            width: (80/16rem);
-            height: (80/16rem);
-            /* 12px - 20px */
-            margin-right: clamp(0.75rem, 3vw, 1.25rem);
-            border-radius: 1rem 0 1rem 0;
-            border: 1px solid #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* prevents flexbox from squishing it */
-            flex: none;
-            transition:
-                background-color 0.3s,
-                box-shadow 0.3s,
-                transform 0.6s;
-        }
-
-        .cs-flex-group {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-        }
-
-        .cs-icon {
-            width: (40/16rem);
-            height: auto;
-        }
-
-        .cs-header {
-            font-size: (20/16rem);
-            color: #fff;
-            font-weight: 900;
-            line-height: 1.2em;
-            margin: 0;
-            margin-bottom: (12/16rem);
-            display: block;
-        }
-
-        .cs-link,
-        .cs-address {
-            font-size: var(--headerColor);
-            line-height: 1.5em;
-            text-decoration: none;
-            color: var(--bodyTextColorWhite);
-            display: block;
-        }
-
-        .cs-link {
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        .cs-background {
-            width: 100%;
-            height: 100%;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            /* makes it act like a background image */
-            object-fit: cover;
-        }
-    }
-}
-
-/* Tablet - 650px */
-@media only screen and (min-width: 40.625em) {
-    #ContactStrip-721 {
-        .cs-stat-group {
-            flex-direction: row;
-            flex-wrap: wrap;
-            column-gap: (20/16rem);
-            row-gap: (32/16rem);
-        }
-    }
-}
-
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64em) {
-    #ContactStrip-721 {
-        .cs-stat-group {
-            max-width: (1280/16rem);
-            flex-wrap: nowrap;
-            justify-content: space-evenly;
-        }
-    }
-}
-
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #ContactStrip-721 {
-            background-color: var(--dark);
+        #contact-1403 {
+            background-color: rgba(0, 0, 0, 0.2);
+            .cs-title,
+            .cs-text,
+            .cs-header,
+            .cs-link,
+            .cs-label,
+            .cs-h3 {
+                color: var(--bodyTextColorWhite);
+            }
 
-            .cs-picture {
-                border: 1px solid #fff;
+            .cs-contact-text,
+            .cs-link {
+                opacity: 0.8;
+            }
+
+            .cs-icon-wrapper {
+                border-color: #fff;
+            }
+
+            .cs-icon {
+                /* makes it white */
+                filter: grayscale(1) brightness(1000%);
+            }
+
+            .cs-form {
+                background-color: var(--medium);
+            }
+
+            .cs-input {
+                background-color: rgba(255, 255, 255, 0.2);
+                color: #fff;
+                &::placeholder {
+                    color: #fff;
+                    opacity: 0.8;
+                }
+            }
+
+            .cs-graphic {
+                opacity: 0.4;
             }
         }
     }
 }
 
-                                
 /*-- -------------------------- -->
 <---    Google Maps Iframe      -->
 <--- -------------------------- -*/
@@ -961,3 +795,4 @@
         }
     }
 }
+
