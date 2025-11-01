@@ -2,7 +2,7 @@ module.exports = {
     // Main business information
     "name": "Nutcha Thai Massage Group",
     "email": "nutchathaimassagegroup@gmail.com",
-    "phoneForTel": "07387639263",
+    "phoneForTel": "+447387639263",
     "phoneFormatted": "07387 639263",
     "openingHours": "Mon-Sun: 10am-8pm",
     "address": {
@@ -31,7 +31,7 @@ module.exports = {
         "sutton-coldfield": {
             "name": "Nutcha Thai Massage Sutton Coldfield",
             "email": "nutchathaimassagegroup@gmail.com",
-            "phoneForTel": "07387639263",
+            "phoneForTel": "+447387639263",
             "phoneFormatted": "07387 639263",
             "onlineBooking": "https://nutchathaimassagesutton.setmore.com",
             "openingHours": "Mon-Sun: 10am - 8pm",
@@ -58,7 +58,7 @@ module.exports = {
         "nuneaton": {
             "name": "Nutcha Thai Massage Nuneaton",
             "email": "nutchathaimassagenuneaton@gmail.com",
-            "phoneForTel": "07362433108",
+            "phoneForTel": "+447362433108",
             "phoneFormatted": "07362 433108",
             "onlineBooking": "https://nutchathaimassage-nuneaton.setmore.com",
             "openingHours": "Mon-Sun: 10am - 8pm",
@@ -85,7 +85,7 @@ module.exports = {
         "hinckley": {
             "name": "Nutcha Thai Massage Hinckley",
             "email": "nutchathaimassagegroup@gmail.com", // Placeholder - update when available
-            "phoneForTel": "07367594559",
+            "phoneForTel": "+447367594559",
             "phoneFormatted": "07367 594559",
             "onlineBooking": "https://nutchathaimassagehinckley.setmore.com",
             "openingHours": "Mon-Sun: 10am - 8pm",
@@ -112,7 +112,7 @@ module.exports = {
         "stratford-shrieves-walk": {
             "name": "Nutcha Thai Massage Stratford Shrieves Walk",
             "email": "nutchathaimassagegroup@gmail.com",
-            "phoneForTel": "07309252929",
+            "phoneForTel": "+447309252929",
             "phoneFormatted": "07309 252929",
             "onlineBooking": "https://nutchathaimassagestratfordshrieveswalk.setmore.com",
             "openingHours": "Mon-Sun: 10am - 8pm",
@@ -139,8 +139,8 @@ module.exports = {
         "stratford-henley-street": {
             "name": "Nutcha Thai Massage Stratford Henley Street",
             "email": "nutchathaimassagegroup@gmail.com",
-            "phoneForTel": "07496539654",
-            "phoneFormatted": "07496 539654",
+            "phoneForTel": "+447362400271",
+            "phoneFormatted": "07362 400271",
             "onlineBooking": "https://nutchathaimassagestratfordhenleystreet.setmore.com",
             "openingHours": "Mon-Sun: 10am - 5pm",
             "googleReview": "https://g.page/r/CfY6Pi1XohCOEBM/review",
@@ -166,7 +166,7 @@ module.exports = {
         "glasgow": {
             "name": "Nutcha Thai Massage Glasgow",
             "email": "nutchathaimassagegroup@gmail.com",
-            "phoneForTel": "07599113734",
+            "phoneForTel": "+447599113734",
             "phoneFormatted": "07599 113734",
             "onlineBooking": "https://nutchathaimassageglasgow.setmore.com",
             "openingHours": "Mon-Sun: 10am - 8pm",
