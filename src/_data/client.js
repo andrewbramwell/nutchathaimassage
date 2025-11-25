@@ -135,28 +135,28 @@ module.exports = {
                 "facebook": "https://www.facebook.com/profile.php?id=61579255614001"
             }
         },
-        
-        "stratford-henley-street": {
-            "name": "Nutcha Thai Massage Stratford Henley Street",
+
+        "droitwich": {
+            "name": "Nutcha Thai Massage Droitwich",
             "email": "nutchathaimassagegroup@gmail.com",
-            "phoneForTel": "+447362400271",
-            "phoneFormatted": "07362 400271",
-            "onlineBooking": "https://nutchathaimassagestratfordhenleystreet.setmore.com",
-            "openingHours": "Mon-Sun: 10am - 5pm",
-            "googleReview": "https://g.page/r/CfY6Pi1XohCOEBM/review",
-            "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.7!2d-1.708!3d52.1937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876ef89b9c02b91%3A0xf7e6c02c5e6f5f17!2s50%20Henley%20St%2C%20Stratford-upon-Avon%20CV37%206QW%2C%20UK!5e0!3m2!1sen!2suk!4v1695423897283!5m2!1sen!2suk",
+            "phoneForTel": "+447496539654",
+            "phoneFormatted": "07496 539654",
+            "onlineBooking": "https://nutchathaimassagedroitwich.setmore.com/",
+            "openingHours": "Mon-Sun: 10am - 8pm",
+            "googleReview": "https://maps.app.goo.gl/Lf8BLEQyHSP89zuu9",
+            "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2441.6304088843563!2d-2.1467083!3d52.2682562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870ed360779643d%3A0x31052f0c6e0571f7!2sNutcha%20Thai%20Massage%20Droitwich!5e0!3m2!1sen!2sth!4v1764076337515!5m2!1sen!2sth",
             "address": {
-                "lineOne": "50 Henley Street",
+                "lineOne": "59 High Street",
                 "lineTwo": "",
-                "city": "Stratford-upon-Avon",
-                "state": "Stratford-upon-Avon",
-                "zip": "CV37 6QW",
+                "city": "Droitwich",
+                "state": "Worcestershire",
+                "zip": "WR9 8EP",
                 "country": "UK",
-                "mapLink": "https://maps.app.goo.gl/bABiQChSt2Liv3PQA"
+                "mapLink": "https://maps.app.goo.gl/Lf8BLEQyHSP89zuu9"
             },
             "geo": {
-                "latitude": "52.1937",
-                "longitude": "-1.708"
+                "latitude": "52.2682562",
+                "longitude": "-2.1467083"
             },
             "socials": {
                 "facebook": "https://www.facebook.com/profile.php?id=61579255614001"
