@@ -174,8 +174,312 @@ eleventyNavigation:
 <!-- ============================================ -->
 <!--                    Massages                  -->
 <!-- ============================================ -->
-                                
-{% include 'components/services-877.html' %} 
+
+<section id="services-877">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Massages</span>
+            <h2 class="cs-title">Our Massage Treatments</h2>
+            <p class="cs-text">
+                Discover our comprehensive range of authentic Thai massage and wellness treatments, each designed to promote healing, relaxation, and restore your body's natural balance and well-being.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="{{client.locations[locationKey].onlineBooking}}" target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image -->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/foot.jpg" | resize({width: 576, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/foot.jpg" | resize({width: 576, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/foot.jpg" | resize({width: 576, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Tablet Image -->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/foot.jpg" | resize({width: 634, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/foot.jpg" | resize({width: 634, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/foot.jpg" | resize({width: 634, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Desktop Image -->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/foot.jpg" | resize({width: 828, height: 400}) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/foot.jpg" | resize({width: 828, height: 400}) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/foot.jpg" | resize({width: 828, height: 400}) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/foot.jpg" | resize({width: 688, height: 480}) | jpeg %}" alt="Head and Foot Reflexology Massage" width="413" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Head and Foot Reflexology</h3>
+                    <p class="cs-item-text">
+                        <strong>30 Min £30</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>60 Min £60</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        Therapeutic technique applying precise pressure to reflex points on feet and head, corresponding to organs throughout the body. Promotes relaxation, improves circulation, and helps restore natural balance.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="{{client.locations[locationKey].onlineBooking}}" target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image -->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 576, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 576, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 576, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Tablet Image -->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 634, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 634, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 634, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Desktop Image -->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 828, height: 400}) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 828, height: 400}) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/oil.jpg" | resize({width: 828, height: 400}) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/oil.jpg" | resize({width: 688, height: 480}) | jpeg %}" alt="Relaxing Hot Oil Massage" width="413" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Relaxing Hot Oil Massage</h3>
+                    <p class="cs-item-text">
+                        <strong>60 Min £60</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min £90</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min £120</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        Gentle, flowing massage using warmed aromatherapy oils to ease muscle tension, enhance circulation, and deeply nourish skin. Perfect for stress relief and promoting restful sleep.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="{{client.locations[locationKey].onlineBooking}}" target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image -->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 576, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 576, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 576, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Tablet Image -->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 634, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 634, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 634, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Desktop Image -->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 828, height: 400}) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 828, height: 400}) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 828, height: 400}) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/deep-tissue.jpg" | resize({width: 688, height: 480}) | jpeg %}" alt="massage" width="413" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Deep Tissue Massage</h3>
+                    <p class="cs-item-text">
+                        <strong>60 Min £60</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min £90</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min £120</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        Focused therapeutic massage targeting deeper muscle layers and connective tissue, and using firm pressure and slow strokes to release chronic muscle tension and aid injury recovery effectively.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="{{client.locations[locationKey].onlineBooking}}" target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image -->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/full-body.jpg" | resize({width: 576, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/full-body.jpg" | resize({width: 576, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/full-body.jpg" | resize({width: 576, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Tablet Image -->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/full-body.jpg" | resize({width: 634, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/full-body.jpg" | resize({width: 634, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/full-body.jpg" | resize({width: 634, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Desktop Image -->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/full-body.jpg" | resize({width: 828, height: 400}) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/full-body.jpg" | resize({width: 828, height: 400}) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/full-body.jpg" | resize({width: 828, height: 400}) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/full-body.jpg" | resize({width: 688, height: 480}) | jpeg %}" alt="full body massage" width="413" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Full Body Massage</h3>
+                    <p class="cs-item-text">
+                        <strong>60 Min £75</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min £120</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        Comprehensive massage treatment covering all major muscle groups from head to toe. Smooth, flowing strokes and moderate pressure promote total body relaxation and improved circulation.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="{{client.locations[locationKey].onlineBooking}}" target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image -->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 576, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 576, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 576, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Tablet Image -->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 634, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 634, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 634, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Desktop Image -->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 828, height: 400}) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 828, height: 400}) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 828, height: 400}) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/thai-massage.jpg" | resize({width: 688, height: 480}) | jpeg %}" alt="thai massage" width="413" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Thai Traditional Massage</h3>
+                   <p class="cs-item-text">
+                        <strong>60 Min £65</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min £90</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min £120</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        Ancient healing art combining gentle stretching, deep pressure, and energy work for relaxation and balance. Improves flexibility, relieves muscle tension, and promotes overall well-being. rhythmic compression and guided movement techniques.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="{{client.locations[locationKey].onlineBooking}}" target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image -->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/couples-1.jpg" | resize({width: 576, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/couples-1.jpg" | resize({width: 576, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/couples-1.jpg" | resize({width: 576, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Tablet Image -->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/couples-1.jpg" | resize({width: 634, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/couples-1.jpg" | resize({width: 634, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/couples-1.jpg" | resize({width: 634, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Desktop Image -->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/couples-1.jpg" | resize({width: 828, height: 400}) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/couples-1.jpg" | resize({width: 828, height: 400}) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/couples-1.jpg" | resize({width: 828, height: 400}) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/couples-1.jpg" | resize({width: 688, height: 480}) | jpeg %}" alt="massage" width="413" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Couples' Relaxing Hot Oil Massage</h3>
+                     <p class="cs-item-text">
+                        <strong>60 Min £100</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min £160</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min £200</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        A harmonious experience where couples receive gentle, flowing massages with warmed aromatherapy oils simultaneously, promoting deep relaxation and connection in a dual treatment room.
+                    </p>
+                </a>
+            </li>
+             <li class="cs-item">
+                <a href="{{client.locations[locationKey].onlineBooking}}" target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image -->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/couples-2.jpg" | resize({width: 576, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/couples-2.jpg" | resize({width: 576, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/couples-2.jpg" | resize({width: 576, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Tablet Image -->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/couples-2.jpg" | resize({width: 634, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/couples-2.jpg" | resize({width: 634, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/couples-2.jpg" | resize({width: 634, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Desktop Image -->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/couples-2.jpg" | resize({width: 828, height: 400}) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/couples-2.jpg" | resize({width: 828, height: 400}) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/couples-2.jpg" | resize({width: 828, height: 400}) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/couples-2.jpg" | resize({width: 688, height: 480}) | jpeg %}" alt="massage" width="413" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Couples' Deep Tissue Massage</h3>
+                     <p class="cs-item-text">
+                        <strong>60 Min £110</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min £170</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min £210</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        Tailored treatment for two, where skilled therapists work on deeper muscle layers using firm pressure to release chronic tension and promote healing for both partners.
+                    </p>
+                </a>
+            </li>
+             <li class="cs-item">
+                <a href="{{client.locations[locationKey].onlineBooking}}" target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image -->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/couples-3.jpg" | resize({width: 576, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/couples-3.jpg" | resize({width: 576, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/couples-3.jpg" | resize({width: 576, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Tablet Image -->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/couples-3.jpg" | resize({width: 634, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/couples-3.jpg" | resize({width: 634, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/couples-3.jpg" | resize({width: 634, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Desktop Image -->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/couples-3.jpg" | resize({width: 828, height: 400}) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/couples-3.jpg" | resize({width: 828, height: 400}) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/couples-3.jpg" | resize({width: 828, height: 400}) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/couples-3.jpg" | resize({width: 688, height: 480}) | jpeg %}" alt="massage" width="413" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Couples' Thai Traditional Massage</h3>
+                     <p class="cs-item-text">
+                        <strong>60 Min £130</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min £180</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min £220</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        Tailored treatment for two, where skilled therapists work on deeper muscle layers using firm pressure to release chronic tension and promote healing for both partners.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="{{client.locations[locationKey].onlineBooking}}" target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image -->
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hot-stone.jpg" | resize({width: 576, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hot-stone.jpg" | resize({width: 576, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hot-stone.jpg" | resize({width: 576, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Tablet Image -->
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hot-stone.jpg" | resize({width: 634, height: 400}) | avif %}" type="image/avif">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hot-stone.jpg" | resize({width: 634, height: 400}) | webp %}" type="image/webp">
+                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hot-stone.jpg" | resize({width: 634, height: 400}) | jpeg %}" type="image/jpeg">
+                        <!--Desktop Image -->
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hot-stone.jpg" | resize({width: 828, height: 400}) | avif %}" type="image/avif">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hot-stone.jpg" | resize({width: 828, height: 400}) | webp %}" type="image/webp">
+                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hot-stone.jpg" | resize({width: 828, height: 400}) | jpeg %}" type="image/jpeg">
+                        <img src="{% getUrl "/assets/images/hot-stone.jpg" | resize({width: 688, height: 480}) | jpeg %}" alt="massage" width="413" height="200" loading="lazy" decoding="async" aria-hidden="true">
+                    </picture>
+                    <h3 class="cs-h3">Hot Stone Massage</h3>
+                     <p class="cs-item-text">
+                        <strong>60 Min £65</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min £110</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min £130</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        Luxurious treatment using heated basalt stones placed on key body points. Therapeutic heat penetrates deep into muscles, promoting profound relaxation whilst alleviating tension.
+                    </p>
+                </a>
+            </li>
+        </ul>
+        <a href="{{client.locations[locationKey].onlineBooking}}" target="_blank" rel="noopener" class="cs-button-solid">Book A Massage</a>
+    </div>
+</section> 
 
 <!-- ============================================ -->
 <!--                Why Choose Us                 -->
