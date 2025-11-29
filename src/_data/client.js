@@ -141,7 +141,7 @@ module.exports = {
             "email": "nutchathaimassagegroup@gmail.com",
             "phoneForTel": "+447496539654",
             "phoneFormatted": "07496 539654",
-            "onlineBooking": "https://nutchathaimassagedroitwich.setmore.com/",
+            "onlineBooking": "https://www.fresha.com/a/nutcha-thai-massage-in-droitwich-droitwich-spa-59-high-street-lwgms31e/booking?menu=true&pId=2713196&dppub=true&cartId=aa7ec662-7145-4315-b5fe-7c3af47ddb86",
             "openingHours": "Mon-Sun: 10am - 8pm",
             "googleReview": "https://maps.app.goo.gl/Lf8BLEQyHSP89zuu9",
             "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2441.6304088843563!2d-2.1467083!3d52.2682562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870ed360779643d%3A0x31052f0c6e0571f7!2sNutcha%20Thai%20Massage%20Droitwich!5e0!3m2!1sen!2sth!4v1764076337515!5m2!1sen!2sth",
