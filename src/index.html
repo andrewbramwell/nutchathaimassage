@@ -34,43 +34,7 @@ eleventyNavigation:
         }
     </script>
 
-    <!-- JSON Schema Markup -->
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "LocalBusiness",
-            "name": "{{ client.name }}",
-            {% if preloadImg %}"image": "{{ preloadImg }}",{% endif %}
-            {% if client.phoneFormatted %}"telephone": "{{ client.phoneFormatted }}",{% endif %}
-            {% if client.email %}"email": "{{ client.email }}",{% endif %}
-            {% if client.address %}
-                "address": {
-                    "@type": "PostalAddress"{% if client.address.lineOne %},
-                        "streetAddress": "{{ client.address.lineOne }}{% if client.address.lineTwo %}, {{ client.address.lineTwo }}{% endif %}"
-                    {% endif %}
-                    {% if client.address.city %},
-                        "addressLocality": "{{ client.address.city }}"
-                    {% endif %}
-                    {% if client.address.state %},
-                        "addressRegion": "{{ client.address.state }}"
-                    {% endif %}
-                    {% if client.address.zip %},
-                        "postalCode": "{{ client.address.zip }}"
-                    {% endif %}
-                    {% if client.address.country %},
-                        "addressCountry": "{{ client.address.country }}"
-                    {% endif %}
-                },
-            {% endif %}
-            {% if client.domain and page.url %}"url": "{{ client.domain }}{{ page.url }}",{% endif %}
-            {% if client.socials %}
-                "sameAs": [{% for platform, url in client.socials %}
-                        {% if not loop.first %},{% endif %}
-                        "{{ url }}"
-                    {% endfor %}]
-            {% endif %}
-        }
-    </script>
+   
 {% endblock %}
 
 {% block body %}
@@ -305,8 +269,8 @@ eleventyNavigation:
                 </picture>
             </li>
             <li class="cs-item">
-                <a href="/locations/stratford-henley-street/" class="cs-link">
-                    <h3 class="cs-h3"><span class="cs-span">Stratford Henley Street</h3>
+                <a href="/locations/droitwich/" class="cs-link">
+                    <h3 class="cs-h3"><span class="cs-span">Droitwich</h3>
                 </a>
                 <picture class="cs-background">
                     <!--Mobile Image -->
@@ -512,17 +476,5 @@ eleventyNavigation:
         item.addEventListener('click', onClick)
         }
 </script>         
-                                
-                                
-                                
-                                
-<script>const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
-    for (const item of faqItems) {
-        const onClick = () => {
-        item.classList.toggle('active')
-    }
-    item.addEventListener('click', onClick)
-    }
-</script>
 
 {% endblock %}
