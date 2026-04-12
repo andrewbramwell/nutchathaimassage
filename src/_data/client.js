@@ -166,9 +166,9 @@ module.exports = {
         "glasgow": {
             "name": "Nutcha Thai Massage Glasgow",
             "email": "nutchathaimassagegroup@gmail.com",
-            "phoneForTel": "+447599113734",
-            "phoneFormatted": "07599 113734",
-            "onlineBooking": "https://nutchathaimassageglasgow.setmore.com",
+            "phoneForTel": "+447427672296",
+            "phoneFormatted": "07427 672296",
+            "onlineBooking": "",
             "openingHours": "Mon-Sun: 10am - 8pm",
             "googleReview": "https://g.page/r/CWlZhnrAjbUyEBM/review",
             "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.7!2d-4.2592!3d55.8606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4888442d55b5f3b9%3A0xa1f1e6db44ac7b72!2s93%20Hope%20St%2C%20Glasgow%20G2%206LD%2C%20UK!5e0!3m2!1sen!2suk!4v1695423897283!5m2!1sen!2suk",
