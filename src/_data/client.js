@@ -55,33 +55,6 @@ module.exports = {
             }
         },
         
-        "nuneaton": {
-            "name": "Nutcha Thai Massage Nuneaton",
-            "email": "nutchathaimassagenuneaton@gmail.com",
-            "phoneForTel": "+447362433108",
-            "phoneFormatted": "07362 433108",
-            "onlineBooking": "https://nutchathaimassage-nuneaton.setmore.com",
-            "openingHours": "Mon-Sun: 10am - 8pm",
-            "googleReview": "https://g.page/r/CbdraQf1A-6HEBM/review",
-            "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.7!2d-1.4859!3d52.5196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48774f8414181d4d%3A0xf39df1212d14c1cb!2s108%20Croft%20Rd%2C%20Nuneaton%20CV10%207DN%2C%20UK!5e0!3m2!1sen!2suk!4v1695423897283!5m2!1sen!2suk",
-            "address": {
-                "lineOne": "108 Croft Road",
-                "lineTwo": "",
-                "city": "Nuneaton",
-                "state": "Warwickshire",
-                "zip": "CV10 7DN",
-                "country": "UK",
-                "mapLink": "https://maps.app.goo.gl/Yr7ScYdti5L5FENo7"
-            },
-            "geo": {
-                "latitude": "52.5196",
-                "longitude": "-1.4859"
-            },
-            "socials": {
-                "facebook": "https://www.facebook.com/profile.php?id=61579255614001"
-            }
-        },
-        
         "hinckley": {
             "name": "Nutcha Thai Massage Hinckley",
             "email": "nutchathaimassagegroup@gmail.com", // Placeholder - update when available
