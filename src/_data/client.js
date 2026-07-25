@@ -80,60 +80,6 @@ module.exports = {
             "socials": {
                 "facebook": "https://www.facebook.com/profile.php?id=61579255614001"
             }
-        },
-        
-        "stratford-shrieves-walk": {
-            "name": "Nutcha Thai Massage Stratford Shrieves Walk",
-            "email": "nutchathaimassagegroup@gmail.com",
-            "phoneForTel": "+447309252929",
-            "phoneFormatted": "07309 252929",
-            "onlineBooking": "https://nutchathaimassagestratfordshrieveswalk.setmore.com",
-            "openingHours": "Mon-Sun: 10am - 8pm",
-            "googleReview": "https://g.page/r/CdcE8RLQbWKCEBM/review",
-            "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.7!2d-1.7053!3d52.192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876ef8f2db8a2d9%3A0xe74f39f3aa1f47a1!2s11-12%20Shrieves%20Walk%2C%20Stratford-upon-Avon%20CV37%206GJ%2C%20UK!5e0!3m2!1sen!2suk!4v1695423897283!5m2!1sen!2suk",
-            "address": {
-                "lineOne": "11-12 Shrieves Walk",
-                "lineTwo": "",
-                "city": "Stratford Upon Avon",
-                "state": "Stratford Upon Avon",
-                "zip": "CV37 6GJ",
-                "country": "UK",
-                "mapLink": "https://maps.app.goo.gl/qpeF8iZ8Tn1jo78x8"
-            },
-            "geo": {
-                "latitude": "52.192",
-                "longitude": "-1.7053"
-            },
-            "socials": {
-                "facebook": "https://www.facebook.com/profile.php?id=61579255614001"
-            }
-        },
-
-        "droitwich": {
-            "name": "Nutcha Thai Massage Droitwich",
-            "email": "nutchathaimassagegroup@gmail.com",
-            "phoneForTel": "+447496539654",
-            "phoneFormatted": "07496 539654",
-            "onlineBooking": "https://www.fresha.com/a/nutcha-thai-massage-in-droitwich-droitwich-spa-59-high-street-lwgms31e/booking?menu=true&pId=2713196&dppub=true&cartId=aa7ec662-7145-4315-b5fe-7c3af47ddb86",
-            "openingHours": "Mon-Sun: 10am - 8pm",
-            "googleReview": "https://maps.app.goo.gl/Lf8BLEQyHSP89zuu9",
-            "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2441.6304088843563!2d-2.1467083!3d52.2682562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870ed360779643d%3A0x31052f0c6e0571f7!2sNutcha%20Thai%20Massage%20Droitwich!5e0!3m2!1sen!2sth!4v1764076337515!5m2!1sen!2sth",
-            "address": {
-                "lineOne": "59 High Street",
-                "lineTwo": "",
-                "city": "Droitwich",
-                "state": "Worcestershire",
-                "zip": "WR9 8EP",
-                "country": "UK",
-                "mapLink": "https://maps.app.goo.gl/Lf8BLEQyHSP89zuu9"
-            },
-            "geo": {
-                "latitude": "52.2682562",
-                "longitude": "-2.1467083"
-            },
-            "socials": {
-                "facebook": "https://www.facebook.com/profile.php?id=61579255614001"
-            }
         }
     }
 };
