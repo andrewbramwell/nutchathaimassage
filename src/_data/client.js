@@ -80,6 +80,33 @@ module.exports = {
             "socials": {
                 "facebook": "https://www.facebook.com/profile.php?id=61579255614001"
             }
+        },
+
+        "warwick": {
+            "name": "Nutcha Thai Massage Warwick",
+            "email": "nutchathaimassagegroup@gmail.com",
+            "phoneForTel": "+447427672296",
+            "phoneFormatted": "07427 672296",
+            "onlineBooking": "https://nutchathaimassagewarwick.setmore.com",
+            "openingHours": "Mon-Sun: 10am - 9pm",
+            "googleReview": "https://g.page/r/CQ7Qtc3WICGLEBM/review",
+            "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815.9699562720066!2d-1.5901234!3d52.280953399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870cb26c358ce0d%3A0x8b2120d6cdb5d00e!2sNutcha%20Thai%20Massage%20Warwick!5e1!3m2!1sen!2sit!4v1790346779310!5m2!1sen!2sit",
+            "address": {
+                "lineOne": "32 Brook St",
+                "lineTwo": "",
+                "city": "Warwick",
+                "state": "Warwickshire",
+                "zip": "CV34 4BL",
+                "country": "UK",
+                "mapLink": "https://maps.app.goo.gl/Kcxk9DiGSrQofEzV7"
+            },
+            "geo": {
+                "latitude": "52.2809534",
+                "longitude": "-1.5901234"
+            },
+            "socials": {
+                "facebook": "https://www.facebook.com/profile.php?id=61579255614001"
+            }
         }
     }
 };

@@ -590,15 +590,8 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #services-1356 .cs-card-group {
-    /* Change to 2 columns for desktop to create 2 items per row */
-    grid-template-columns: repeat(2, 1fr);
-  }
   #services-1356 .cs-item {
-    /* Each item takes full width of its column */
-    grid-column: span 1;
-    /* Make tiles 30% taller on desktop: 305px * 1.3 = 396.5px */
-    height: 24.78125rem;
+    grid-column: span 4;
   }
 }
 /* Dark Mode */
